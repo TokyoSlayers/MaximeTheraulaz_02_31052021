@@ -11,17 +11,29 @@
 
     <body>
         <header>
-            <img src="images/Reservia.png" alt="logoResrvia"/>
+            <div>
+                <img src="images/Reservia.png" alt="logoResrvia"/>
+                <a href="#signin" id="sign">S'inscrire</a>
+            </div>
             <nav>
-                <div id="nav__modifie">
-                    <a href="#heberg" class="nav__link">Hébergement</a>
-                    <a href="#activity" class="nav__link">Activités</a>
-                </div>
-                <a href="#signin" class="nav__link" id ="signup">S'inscrire</a>
+                <a href="#heberg" class="navlink">Hébergement</a>
+                <a href="#activity" class="navlink">Activités</a>
             </nav>
         </header>
         <main>
-
+            <div>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+            
+            <form method="GET" action="index.html">
+                <i id="map" class="fas fa-map-marked-alt"></i>
+                <input type="search" name="search" placeholder="Paris, France" size="1">
+                <button type="submit">
+                    <i class="searchFormSubmitinputIcon fas fa-search"></i>
+                </button>
+            </form>
+            
         </main>
         <footer>
 

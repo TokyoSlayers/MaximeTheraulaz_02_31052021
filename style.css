@@ -1,2 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*basic*/
+body{
+    font-family: "Raleway", "Sans serif";
+    margin: 0%;
+}
+
+/*header*/
+
+header img{
+    height: 45px;
+    width: auto;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*navigator*/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navlink{
+    border-bottom: 3px solid #F2F2F2;
+    text-align: center;
+    font-weight: 500;
+    padding: 30px;
+}
+
+.navlink:visited, .navlink{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+.navlink:focus, .navlink:hover {
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+#sign{
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+/*main*/
+main{
+    margin: 32px;
+    max-width: 220px;
+}
+h1, p{
+    cursor: default;
+}
+
+/*formular*/
+
+form{
+    display: inline-flex;
+    overflow: auto;
+}
+
+#map{
+    background-color: #F2F2F2;
+    padding: 16px 20px;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+}
+
+form input{
+    border: #F2F2F2 1px solid;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+}
+
+form button{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding: 0 25px;
+    font-family: "Raleway", "Sans serif";
+    font-size: 16px;
+    cursor: pointer;
+}
