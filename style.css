@@ -56,9 +56,9 @@ nav{
 /*main*/
 main{
     margin: 32px;
-    max-width: 220px;
+    max-width: 240px;
 }
-h1, p{
+h1, p, h2{
     cursor: default;
 }
 
@@ -96,4 +96,76 @@ form button{
     font-family: "Raleway", "Sans serif";
     font-size: 16px;
     cursor: pointer;
+}
+
+/*Filters*/
+#filters{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.circle{
+    border-radius: 100%;
+    background-color: #DEEBFF;
+    margin: -2px;
+    height: 50px;
+    width: 50px;
+	color: #0065FC;
+}
+
+.filter{
+    margin-left: 5px;
+    border: 2px #F2F2F2 solid;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+	transition-duration: 0.1s;
+}
+
+.filter:hover{
+    transform: scale(1.015);
+	background-color: #F2F2F2;
+}
+
+.filter, .filter i, .filter p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.filter p{
+    padding: 0 13px;
+}
+
+/*info i*/
+
+.info{
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+	color: #0065FC;
+    border: 2px #F2F2F2 solid;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+#information{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#information p {
+    padding: 0 0 0 10px;
+    align-items: initial;
+}
+
+#information i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
