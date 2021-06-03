@@ -218,6 +218,8 @@ form #recherche{
 
 #activite img{
     object-fit: cover;
+    width: 290px;
+    height: 112px;
 }
 
 /*row column*/
