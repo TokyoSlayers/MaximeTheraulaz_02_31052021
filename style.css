@@ -25,7 +25,6 @@ header div{
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     text-align: center;
 }
 
@@ -54,9 +53,9 @@ nav{
 }
 
 /*main*/
-main{
-    margin: 32px;
-    max-width: 240px;
+main div{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 h1, p, h2{
     cursor: default;
@@ -70,6 +69,7 @@ h1,h2,h3,h4,h5,h6{
 form{
     display: inline-flex;
     overflow: auto;
+    margin-left: 25px;
 }
 
 #map{
@@ -177,6 +177,9 @@ form button{
 
 #lpp{
     background-color: #F2F2F2;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 40px;
 }
 #lpp img{
     height: 45px;
