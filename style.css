@@ -61,6 +61,9 @@ main{
 h1, p, h2{
     cursor: default;
 }
+h1,h2,h3,h4,h5,h6{
+    font-size: 27px;
+}
 
 /*formular*/
 
@@ -197,10 +200,12 @@ form button{
     align-items: center;
     justify-content: center;
 }
+
 .border{
     background-color: white;
     border-radius: 50px;
 }
+
 .column{
     display: flex;
     flex-direction: column;
