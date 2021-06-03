@@ -64,6 +64,13 @@ h1,h2,h3,h4,h5,h6{
     font-size: 27px;
 }
 
+.star .fas{
+    color: gold;
+}
+.star .none{
+    color: gray;
+}
+
 /*formular*/
 
 form{
@@ -99,6 +106,10 @@ form button{
     font-family: "Raleway", "Sans serif";
     font-size: 16px;
     cursor: pointer;
+}
+
+form #recherche{
+    overflow: auto;
 }
 
 /*Filters*/
@@ -173,6 +184,12 @@ form button{
     justify-content: center;
 }
 
+/*les hebergements*/
+
+#hl{
+    margin: 0px;
+}
+
 /*les plus populaires*/
 
 #lpp{
@@ -182,18 +199,22 @@ form button{
     padding-bottom: 40px;
 }
 #lpp img{
-    height: 45px;
-    width: auto;
-}
-#lpp .column{
-
+    object-fit: cover;
+    height: 290px;
+    width: 112px;
+    border-radius: 40px 0px 0px 40px;
 }
 
 /*hebergement*/
 
 #hebergement img{
-    height: 45px;
-    width: auto;
+    object-fit: cover;
+    width: 236px;
+    height: 112px;
+}
+
+#hebergement .column {
+    border-radius: 40px 40px 0px 0px;
 }
 
 /*row column*/
@@ -203,6 +224,8 @@ form button{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 .border{
@@ -215,6 +238,8 @@ form button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+    padding: 10px;
 }
 .shadow{
     box-shadow: 10px 10px 10px #F2F2F2;
