@@ -183,7 +183,7 @@ form button{
 /*row column*/
 .row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
