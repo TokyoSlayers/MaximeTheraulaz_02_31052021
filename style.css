@@ -9,11 +9,9 @@ body{
 /*header*/
 
 header img{
-    height: auto;
-    max-width: 100%;
+    height: 45px;
+    width: auto;
 }
-/*    height: 45px;
-    width: auto;*/
 
 header div{
     display: flex;
@@ -102,9 +100,7 @@ form button{
 
 /*Filters*/
 #filters{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    overflow: auto;
 }
 
 .circle{
