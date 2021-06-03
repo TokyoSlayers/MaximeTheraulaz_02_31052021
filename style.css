@@ -211,10 +211,13 @@ form #recherche{
     object-fit: cover;
     width: 236px;
     height: 112px;
+    border-radius: 40px 40px 0px 0px;
 }
 
-#hebergement .column {
-    border-radius: 40px 40px 0px 0px;
+/*activite*/
+
+#activite img{
+    object-fit: cover;
 }
 
 /*row column*/
