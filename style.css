@@ -35,7 +35,7 @@ nav{
     padding: 30px;
 }
 
-.navlink:visited, .navlink{
+.navlink:visited, .navlink, a{
     text-decoration: none;
     color: black;
     margin: 5px;
@@ -249,3 +249,5 @@ form #recherche{
 .shadow{
     box-shadow: 10px 10px 10px #F2F2F2;
 }
+
+/*footer*/
