@@ -12,16 +12,13 @@ header img{
     height: 45px;
     width: auto;
 }
+
 header div{
-
-}
-
-header div div{
     display: flex;
     flex-direction: row;
     padding: 30px;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 /*navigator*/
@@ -118,7 +115,6 @@ form #recherche{
 /*Filters*/
 #filters{
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -290,9 +286,33 @@ footer div a:hover {
     .center{
         text-align: center;
     }
-    #top{
-       
+    #lpp{
+        order: 1;
+        border-radius: 50px;
+        margin-left: 20px;
     }
+    #lpp h3{
+        padding-left: 30px;
+    }
+    #hebergement{
+        order: 0;
+        background-color: #f2f2f2;
+        border-radius: 50px;
+        margin-right: 20px;
+
+    }
+    #hebergement h4{
+        padding-left: 30px;
+        margin-bottom: 0px;
+    }
+    .rowflex{
+        display: flex;
+        flex-direction: row;
+    }
+    #hl{
+        display: flex;
+    }
+
 }
 
 /*tablette*/
@@ -302,6 +322,9 @@ footer div a:hover {
     }
     #top{
         display: none;
+    }
+    #filters{
+        flex-direction: column;
     }
 }
 
