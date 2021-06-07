@@ -18,14 +18,14 @@ header div{
     flex-direction: row;
     padding: 30px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 /*navigator*/
 nav{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .navlink{
@@ -287,6 +287,9 @@ footer div a:hover {
     .center{
         text-align: center;
     }
+    #top{
+       
+    }
 }
 
 /*tablette*/
@@ -294,7 +297,7 @@ footer div a:hover {
     #recherche{
         display: none;
     }
-    #bottom{
+    #top{
         display: none;
     }
 }
@@ -304,7 +307,8 @@ footer div a:hover {
     #recherche_emot{
         display: none;
     }
-    #top{
+    #bottom{
         display: none;
     }
+
 }
