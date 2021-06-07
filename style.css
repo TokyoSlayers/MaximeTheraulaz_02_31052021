@@ -251,3 +251,50 @@ form #recherche{
 }
 
 /*footer*/
+
+footer {
+    display: flex;
+}
+footer h1 {
+    text-transform: uppercase;
+    font-style: inherit;
+}
+footer div {
+    width: 33%;
+}
+footer div ul {
+    list-style: none;
+    padding: 7px 0;
+}
+footer div li {
+    display: block;
+    margin: 0 2em;
+}
+footer div a {
+    text-decoration: none;
+}
+footer div a:hover {
+    color: black;
+}
+.center{
+    text-align: center;
+}
+
+/*destock*/
+@media (max-width: 1000px) {
+    
+}
+
+/*tablette*/
+@media (max-width: 450px) {
+    #recherche{
+        display: none;
+    }
+}
+
+/*fone*/
+@media (min-width: 450px) {
+    #recherche_emot{
+        display: none;
+    }
+}
