@@ -254,7 +254,6 @@ form #recherche{
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #F2F2F2;
 }
 footer h1 {
@@ -278,14 +277,15 @@ footer div a {
 footer div a:hover {
     color: black;
 }
-.center{
-    text-align: center;
-}
 
 /*destock*/
 @media (min-width: 1000px) {
     footer{
         flex-direction: row;
+        align-items: center;
+    }
+    .center{
+        text-align: center;
     }
 }
 
@@ -294,11 +294,17 @@ footer div a:hover {
     #recherche{
         display: none;
     }
+    #bottom{
+        display: none;
+    }
 }
 
 /*fone*/
 @media (min-width: 450px) {
     #recherche_emot{
+        display: none;
+    }
+    #top{
         display: none;
     }
 }
