@@ -3,65 +3,68 @@
 /*basic*/
 body{
     font-family: "Raleway", "Sans serif";
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /*header*/
-
 header img{
-    height: 45px;
+    height: 56px;
     width: auto;
+    padding: 1rem 0 0 1rem;
 }
 
 header div{
     display: flex;
     flex-direction: row;
-    padding: 30px;
     align-items: center;
     justify-content: space-between;
 }
 
 /*navigator*/
+#allnav{
+    flex-wrap: wrap;
+}
+
 nav{
     display: flex;
     flex-direction: row;
-    /* text-align: center; */
 }
 
 .navlink{
-    border-bottom: 3px solid #F2F2F2;
     text-align: center;
+    justify-content: center;
     font-weight: 500;
+    margin: 0;
     padding: 30px;
-}
-
-.navlink:visited, .navlink, a{
-    text-decoration: none;
-    color: black;
-    margin: 5px;
-}
-
-.navlink:focus, .navlink:hover {
-    border-bottom: 3px solid #0065FC;
-    color: #0065FC;
+    height: auto;
+    width: 140px;
 }
 
 #sign{
     text-decoration: none;
     color: #0065FC;
     font-weight: bold;
+    height: auto;
+    width: 100px;
 }
 
 /*main*/
-main div{
-    margin-left: 10px;
-    margin-right: 10px;
+main{
+    margin: auto;
 }
-h1, p, h2{
+
+p{
     cursor: default;
+    margin: 0;
 }
+
 h1,h2,h3,h4,h5,h6{
-    font-size: 27px;
+    cursor: default;
+    margin: 0;
 }
 
 .star .fas{
@@ -71,12 +74,21 @@ h1,h2,h3,h4,h5,h6{
     color: gray;
 }
 
-/*formular*/
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+.tpadding{
+    padding: 1rem 0 0 1rem;
+}
+.tpadding h1{
+    font-size: 23px;
+}
 
+/*formular*/
 form{
     display: inline-flex;
     overflow: auto;
-    margin-left: 25px;
 }
 
 #map{
@@ -90,7 +102,7 @@ form input{
     border: #F2F2F2 1px solid;
     padding: 15px;
     box-sizing: border-box;
-    width: 120px;
+    width: 12em;
     font-size: 14px;
     font-weight: bold;
     font-family: "Raleway", "Sans serif";
@@ -116,6 +128,7 @@ form #recherche{
 #filters{
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .circle{
@@ -165,7 +178,7 @@ form #recherche{
 }
 
 #information{
-    margin-left: 5px;
+    margin-left: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -186,65 +199,97 @@ form #recherche{
 /*les hebergements*/
 
 #hl{
-    margin: 0px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+.this{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
 }
 
 /*les plus populaires*/
 
 #lpp{
     background-color: #F2F2F2;
-    margin: 0px;
-    padding-top: 5px;
-    padding-bottom: 40px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
 }
 #lpp img{
     object-fit: cover;
-    height: 290px;
-    width: 112px;
+    height: 9rem;
+    width: 3rem;
     border-radius: 40px 0px 0px 40px;
+}
+#lpp .size .this{
+    height: 8rem;
+    width: 12rem;
 }
 
 /*hebergement*/
 
+#hebergement{
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+}
+
 #hebergement img{
     object-fit: cover;
-    width: 236px;
-    height: 112px;
+    height: 5rem;
+    width: 100%;
     border-radius: 40px 40px 0px 0px;
+}
+#hebergement .size .this{
+    height: 5rem;
+    width: 14rem;
+}
+
+#allroom{
+    margin-top: 1rem;
 }
 
 /*activite*/
 
-#activite img{
-    object-fit: cover;
-    width: 290px;
-    height: 112px;
+#activite{
+    margin: 0;
+    padding: 0;
 }
 
-/*row column*/
+#activite .size{
+    height: 10rem;
+    width: 100%;
+}
+#activite .this{
+    padding-top: 0.5rem;
+}
+
+/*row column padding*/
+.padding{
+    padding: 20px;
+    margin-top: 1em;
+}
 
 .row{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
 }
 
 .border{
     background-color: white;
     border-radius: 50px;
+    margin-top: 1em;
 }
 
 .column{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
 }
+
 .shadow{
     box-shadow: 10px 10px 10px #F2F2F2;
 }
@@ -254,21 +299,19 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
+    padding: 2rem 0 0 1rem;
 }
 footer h1 {
     text-transform: uppercase;
     font-style: inherit;
 }
-footer div {
-    width: 33%;
-}
 footer div ul {
     list-style: none;
-    padding: 7px 0;
+    padding: 0;
 }
 footer div li {
     display: block;
-    margin: 0 2em;
+    margin-top: 0.5rem;
 }
 footer div a {
     text-decoration: none;
@@ -278,10 +321,12 @@ footer div a:hover {
 }
 
 /*destock*/
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
     footer{
         flex-direction: row;
         align-items: center;
+        justify-content: space-around;
+        padding-left: 0;
     }
     .center{
         text-align: center;
@@ -296,7 +341,6 @@ footer div a:hover {
     }
     #hebergement{
         order: 0;
-        background-color: #f2f2f2;
         border-radius: 50px;
         margin-right: 20px;
 
@@ -311,30 +355,69 @@ footer div a:hover {
     }
     #hl{
         display: flex;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
-
-}
-
-/*tablette*/
-@media (max-width: 450px) {
-    #recherche{
+    #recherche_emot{
         display: none;
     }
     #top{
         display: none;
     }
     #filters{
-        flex-direction: column;
+        flex-direction: row;
+    }
+    #sign{
+        order: 1;
+    }
+    .navlink:focus,.navlink:hover {
+        border-top: 3px solid #0065FC;
+        color: #0065FC;
+    }
+    .navlink{
+        border-top: 3px solid #F2F2F2;
+    }
+    .rowflex .border{
+        margin-right: 1rem;
+    }
+    .rowflex .resize{
+        margin-right: 0;
+    }
+    .noresize{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .yesresize{
+        height: 18rem;
+        width: 100%;
+        border-radius: 40px 40px 0px 0px;
+    }
+    .sizeimg{
+        object-fit: cover;
+        height: 6rem;
+        width: 100%;
+        border-radius: 40px 40px 0px 0px;
     }
 }
 
-/*fone*/
-@media (min-width: 450px) {
-    #recherche_emot{
+@media (max-width:750px) {
+    #recherche{
         display: none;
     }
     #bottom{
         display: none;
     }
-
+    .navlink:focus,.navlink:hover {
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+    .navlink{
+        border-bottom: 3px solid #F2F2F2;
+    }
+    #activite img{
+        object-fit: cover;
+        height: 6rem;
+        width: 100%;
+        border-radius: 40px 40px 0px 0px;
+    }
 }
