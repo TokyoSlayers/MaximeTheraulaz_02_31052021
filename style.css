@@ -11,60 +11,59 @@ body{
 }
 
 /*header*/
-header img{
-    height: 56px;
-    width: auto;
-    padding: 1rem 0 0 1rem;
-}
-
-header div{
+header{
+    max-width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/*navigator*/
-#allnav{
     flex-wrap: wrap;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-}
-
-.navlink{
-    text-align: center;
-    justify-content: center;
-    font-weight: 500;
-    margin: 0;
-    padding: 30px;
-    height: auto;
-    width: 140px;
-}
-
 #sign{
-    text-decoration: none;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+
+#sign a{
     color: #0065FC;
+    text-decoration: none;
     font-weight: bold;
-    height: auto;
-    width: 100px;
+}
+
+#image{
+    display: flex;
+    height: 56px;
+    align-items:  center;
+}
+#image img{
+    height: 100%;
+}
+
+#navigator{
+    display: flex;
+}
+
+#navigator div{
+    display: flex;
+    height: 56px;
+    width: 50%;
+    align-items:  center;
+    justify-content: center;
 }
 
 /*main*/
 main{
     margin: auto;
 }
+#margin{
+    margin-left: 10px;
+}
 
 p{
     cursor: default;
-    margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6{
     cursor: default;
-    margin: 0;
 }
 
 .star .fas{
@@ -78,12 +77,6 @@ a, a:hover{
     text-decoration: none;
     color: black;
 }
-.tpadding{
-    padding: 1rem 0 0 1rem;
-}
-.tpadding h1{
-    font-size: 23px;
-}
 
 /*formular*/
 form{
@@ -95,7 +88,12 @@ form{
     background-color: #F2F2F2;
     padding: 16px 20px;
     border-radius: 20px 0 0 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#map i{
+    color:black;
 }
 
 form input{
@@ -137,14 +135,17 @@ form #recherche{
     margin: -2px;
     height: 50px;
     width: 50px;
-	color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle i {
+    color: #0065FC;
 }
 
 .filter{
-    margin-left: 5px;
     border: 2px #F2F2F2 solid;
     border-radius: 25px;
-    margin-bottom: 10px;
     font-weight: bold;
 	transition-duration: 0.1s;
 }
@@ -162,6 +163,7 @@ form #recherche{
 }
 
 .filter p{
+    margin: 0;
     padding: 0 13px;
 }
 
@@ -182,7 +184,6 @@ form #recherche{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
 
 #information p {
@@ -199,99 +200,159 @@ form #recherche{
 /*les hebergements*/
 
 #hl{
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-}
-.this{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
 }
 
 /*les plus populaires*/
 
 #lpp{
     background-color: #F2F2F2;
-    margin: 0;
-    padding: 0;
     border-radius: 50px;
+    max-width: 100%;
 }
-#lpp img{
+
+#ltitle h2{
+    margin: 0;
+}
+
+.l{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.l .card{
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom: 3%;
+    width: 80%;
+    height: 20%;
+}
+
+.l .card img{
+    float: left;
     object-fit: cover;
     height: 9rem;
-    width: 3rem;
+    width: 20%;
     border-radius: 40px 0px 0px 40px;
 }
-#lpp .size .this{
-    height: 8rem;
-    width: 12rem;
+.l .card .text_in_card{
+    padding-left: 1rem;
 }
+
+.l .card .text_in_card h3, .l .card .text_in_card p{
+    margin-bottom: 2%;
+}
+
 
 /*hebergement*/
 
 #hebergement{
     background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
     border-radius: 50px;
+    max-width: 100%;
+    height: 100%;
 }
 
-#hebergement img{
+#htitle h2{
+    margin: 0;
+}
+
+.h{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.h .card{
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom: 3%;
+}
+
+.h .card img{
     object-fit: cover;
     height: 5rem;
     width: 100%;
     border-radius: 40px 40px 0px 0px;
 }
-#hebergement .size .this{
-    height: 5rem;
-    width: 14rem;
+
+.h .card .text_in_card{
+    padding-left: 1rem;
+}
+
+.h .card .text_in_card h3, .h .card .text_in_card p{
+    margin: 0;
+    margin-bottom: 2%;
 }
 
 #allroom{
-    margin-top: 1rem;
+    padding-left: 3%;
+    margin-bottom: 2%;
 }
 
 /*activite*/
 
 #activite{
-    margin: 0;
-    padding: 0;
-}
-
-#activite .size{
-    height: 10rem;
     width: 100%;
 }
-#activite .this{
-    padding-top: 0.5rem;
+
+#atitle h2{
+    margin: 0;
 }
 
-/*row column padding*/
-.padding{
-    padding: 20px;
-    margin-top: 1em;
-}
-
-.row{
+.a{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.border{
+.a .card{
     background-color: white;
     border-radius: 50px;
-    margin-top: 1em;
+    height: 100%;
+    box-shadow: #f2f2f2 5px 5px 3px;
+    margin-bottom: 10px;
 }
 
-.column{
-    display: flex;
-    flex-direction: column;
+.a .card .text_in_card{
+    padding-bottom: 1rem;
 }
 
-.shadow{
-    box-shadow: 10px 10px 10px #F2F2F2;
+.a .card img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.a .card .text_in_card{
+    text-align: center;
+}
+
+.a .card .text_in_card h3{
+    margin: 0;
+}
+
+.a .multi_card .card{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.a .multi_card .card img{
+    object-fit: cover;
+    height: 5rem;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
 }
 
 /*footer*/
@@ -322,6 +383,23 @@ footer div a:hover {
 
 /*destock*/
 @media (min-width: 800px) {
+    #navigator div:focus,#navigator div:hover {
+        border-top: 3px solid #0065FC;
+        color: #0065FC;
+    }
+    #sign{
+        width: 10%;
+    }
+    #image{
+        width: 70%;
+    }
+    #image img{
+        padding-left: 5%;
+    }
+    #navigator{
+        width: 20%;
+    }
+
     footer{
         flex-direction: row;
         align-items: center;
@@ -334,90 +412,102 @@ footer div a:hover {
     #lpp{
         order: 1;
         border-radius: 50px;
-        margin-left: 20px;
-    }
-    #lpp h3{
-        padding-left: 30px;
+        width: 25%;
     }
     #hebergement{
         order: 0;
-        border-radius: 50px;
-        margin-right: 20px;
-
+        width: 65%;
     }
-    #hebergement h4{
-        padding-left: 30px;
-        margin-bottom: 0px;
-    }
-    .rowflex{
-        display: flex;
-        flex-direction: row;
-    }
-    #hl{
-        display: flex;
-        padding-left: 1rem;
-        padding-right: 1rem;
+    .card{
+        height: 20%;
+        width: 30%;
     }
     #recherche_emot{
-        display: none;
-    }
-    #top{
         display: none;
     }
     #filters{
         flex-direction: row;
     }
     #sign{
-        order: 1;
+        order: 2;
     }
-    .navlink:focus,.navlink:hover {
-        border-top: 3px solid #0065FC;
-        color: #0065FC;
-    }
-    .navlink{
-        border-top: 3px solid #F2F2F2;
-    }
-    .rowflex .border{
+    .filter{
         margin-right: 1rem;
     }
-    .rowflex .resize{
-        margin-right: 0;
+    #htitle{
+        padding: 2rem;
+        padding-top: 1rem;
     }
-    .noresize{
-        margin: 0;
-        margin-bottom: 1rem;
+    #ltitle{
+        padding: 2rem;
+        padding-top: 1rem;
     }
-    .yesresize{
-        height: 18rem;
-        width: 100%;
-        border-radius: 40px 40px 0px 0px;
+    .a .card,.a .multi_card{
+        width: 20%;
     }
-    .sizeimg{
-        object-fit: cover;
-        height: 6rem;
-        width: 100%;
-        border-radius: 40px 40px 0px 0px;
-    }
+    
 }
 
+/*mobile*/
 @media (max-width:750px) {
-    #recherche{
-        display: none;
-    }
-    #bottom{
-        display: none;
-    }
-    .navlink:focus,.navlink:hover {
+    #navigator div:focus,#navigator div:hover {
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
     }
-    .navlink{
+    #navigator div{
         border-bottom: 3px solid #F2F2F2;
     }
+    #image{
+        justify-content: center;
+    }
+    #sign, #image{
+        width: 50%;
+    }
+    #navigator{
+        width: 100%;
+    }
+    
+    #recherche{
+        display: none;
+    }
+    .filter{
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card{
+        height: 30%;
+        width: 80%;
+    }
+    #htitle{
+        padding-top: 15px;
+        text-align: center;
+    }
+    #allroom{
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    #lpp{
+        margin-bottom: 1rem;
+    }
+    #ltitle{
+        padding-top: 15px;
+        text-align: center;
+    }
+    #hl{
+        flex-direction: column;
+    }
+
+
     #activite img{
         object-fit: cover;
         height: 6rem;
         width: 100%;
         border-radius: 40px 40px 0px 0px;
+    }
+    .a{
+        flex-direction: column;
+    }
+    .a .card,.a .multi_card{
+        width: 80%;
     }
 }
