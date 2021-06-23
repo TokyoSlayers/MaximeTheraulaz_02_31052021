@@ -15,6 +15,7 @@ header{
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    height: 56px;
 }
 
 #sign{
@@ -31,9 +32,9 @@ header{
 
 #image{
     display: flex;
-    height: 56px;
     align-items:  center;
 }
+
 #image img{
     height: 100%;
 }
@@ -42,7 +43,7 @@ header{
     display: flex;
 }
 
-#navigator div{
+#navigator a{
     display: flex;
     height: 56px;
     width: 50%;
@@ -53,9 +54,6 @@ header{
 /*main*/
 main{
     margin: auto;
-}
-#margin{
-    margin-left: 10px;
 }
 
 p{
@@ -196,16 +194,6 @@ form #recherche{
     align-items: center;
     justify-content: center;
 }
-
-/*les hebergements*/
-
-#hl{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 1rem;
-}
-
 /*les plus populaires*/
 
 #lpp{
@@ -278,7 +266,7 @@ form #recherche{
 
 .h .card img{
     object-fit: cover;
-    height: 5rem;
+    max-height: 5rem;
     width: 100%;
     border-radius: 40px 40px 0px 0px;
 }
@@ -380,10 +368,43 @@ footer div a {
 footer div a:hover {
     color: black;
 }
-
+@media (min-width:1200px) {
+    main,header{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media (min-width: 750px) and (max-width: 1200px) {
+    header{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #padding{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media (min-width:1050px){
+    #hl{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+    
+    #lpp{
+        order: 1;
+        border-radius: 50px;
+        width: 25%;
+    }
+    #hebergement{
+        order: 0;
+        width: 65%;
+    }
+}
 /*destock*/
-@media (min-width: 800px) {
-    #navigator div:focus,#navigator div:hover {
+@media (min-width: 750px){
+    #navigator a:focus,#navigator a:hover {
         border-top: 3px solid #0065FC;
         color: #0065FC;
     }
@@ -393,13 +414,9 @@ footer div a:hover {
     #image{
         width: 70%;
     }
-    #image img{
-        padding-left: 5%;
-    }
     #navigator{
         width: 20%;
     }
-
     footer{
         flex-direction: row;
         align-items: center;
@@ -408,15 +425,6 @@ footer div a:hover {
     }
     .center{
         text-align: center;
-    }
-    #lpp{
-        order: 1;
-        border-radius: 50px;
-        width: 25%;
-    }
-    #hebergement{
-        order: 0;
-        width: 65%;
     }
     .card{
         height: 20%;
@@ -450,11 +458,18 @@ footer div a:hover {
 
 /*mobile*/
 @media (max-width:750px) {
-    #navigator div:focus,#navigator div:hover {
+    header{
+        padding-bottom: 2rem;
+    }
+    #padding{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #navigator a:focus,#navigator a:hover {
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
     }
-    #navigator div{
+    #navigator a{
         border-bottom: 3px solid #F2F2F2;
     }
     #image{
