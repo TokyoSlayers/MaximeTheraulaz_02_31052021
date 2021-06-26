@@ -233,7 +233,7 @@ form #recherche{
     height: 4rem;
     min-height: 166px;
     margin: auto;
-    max-width: 90%;
+    width: 90%;
     margin-bottom: 10px;
 }
 
