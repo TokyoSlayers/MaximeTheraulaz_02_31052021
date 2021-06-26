@@ -222,14 +222,19 @@ form #recherche{
     justify-content: center;
 }
 
+.l a{
+    display: flex;
+}
+
 .l .card{
     display: flex;
     background-color: white;
     border-radius: 50px;
-    margin-bottom: 3%;
-    width: 85%;
     height: 4rem;
     min-height: 166px;
+    margin: auto;
+    max-width: 90%;
+    margin-bottom: 10px;
 }
 
 .l .card img{
@@ -241,9 +246,7 @@ form #recherche{
     border: white solid 5px;
 
 }
-.l .card .text_in_card{
-    margin-left: 1rem;
-}
+
 
 .l .card .text_in_card h3, .l .card .text_in_card p{
     margin: 0;
@@ -298,12 +301,12 @@ form #recherche{
     width: 40%;
 }
 
-/*activite*/
+/*activity*/
 
-#activite{
+#activity{
     width: 100%;
 }
-#activite h2{
+#activity h2{
     margin-left: 0;
 }
 
