@@ -1,12 +1,14 @@
 ﻿# Reservia
 Projet du parcours développeur web chez OpenClassRooms. L'objectif etais d'integrer la marquette d'un site de vacances nommé Reservia (image ci-dessous).
 ![Desktop - 1](https://user-images.githubusercontent.com/26519815/123514366-fe014f00-d692-11eb-9509-5624ece64728.png)
+
 ﻿# Eléments fournis
  - La maquette pour les résolutions ordinateur et téléphone nous est donné et tablette au choix.
  - Toutes les images présentes sur le site sont aussi livrés en format small, medium, large & xlarge.
  - Les icones proviennent de Font Awesome
  - Les couleurs sont : bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2
  - La police est "Raleway"
+
 ﻿# Cahier des charges
  - L'integration doit se faire en HTML5 & CSS3, sans framework.
  - Le champ de recherche doit être un champ de saisie, dont le texte peut être édité.
@@ -19,6 +21,7 @@ Projet du parcours développeur web chez OpenClassRooms. L'objectif etais d'inte
  - Le site devra être compatible avec les dernières versions de Chrome et Firefox.
  - Le HTML et le CSS doivent être séparés et le dossier doit être organisé.
  - Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab.
+
 ﻿# Notes sur la réalisation du projet
  - Le projet a été réalisé avec vsc (Visual Studio Code) avec kes plugins :
    - Live Server (Visualisation en temps réel)
