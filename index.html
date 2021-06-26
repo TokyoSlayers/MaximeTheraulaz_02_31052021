@@ -24,57 +24,55 @@
             </nav>
         </header>
         <main>
-            <div id="padding">
-                <div>
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
+            <div>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+            
+            <form class="forum" method="GET" action="index.html">
+                <div id="map">
+                    <i class="fas fa-map-marked-alt"></i>
                 </div>
-                
-                <form class="forum" method="GET" action="index.html">
-                    <div id="map">
-                        <i class="fas fa-map-marked-alt"></i>
+                <input type="search" name="search" placeholder="Marseille, France" size="1">
+                <button id="recherche" type="submit">recherche</button>
+                <button id="recherche_emot" type="submit">
+                    <i class="searchFormSubmitinputIcon fas fa-search"></i>
+                </button>
+            </form>
+            
+            <div>
+                <h3>Filtres</h3>
+                <div id="filters">
+                    <div class="filter">
+                        <div class="circle">
+                            <i class="fas fa-search-dollar"></i>
+                        </div>
+                        <p>Économique</p>
                     </div>
-                    <input type="search" name="search" placeholder="Marseille, France" size="1">
-                    <button id="recherche" type="submit">recherche</button>
-                    <button id="recherche_emot" type="submit">
-                        <i class="searchFormSubmitinputIcon fas fa-search"></i>
-                    </button>
-                </form>
-                
-                <div>
-                    <h3>Filtres</h3>
-                    <div id="filters">
-                        <div class="filter">
-                            <div class="circle">
-                                <i class="fas fa-search-dollar"></i>
-                            </div>
-                            <p>Économique</p>
+                    <div class="filter">
+                        <div class="circle">
+                            <i class="fas fa-child"></i>
                         </div>
-                        <div class="filter">
-                            <div class="circle">
-                                <i class="fas fa-child"></i>
-                            </div>
-                            <p>Familial</p>
+                        <p>Familial</p>
+                    </div>
+                    <div class="filter">
+                        <div class="circle">
+                            <i class="fas fa-hand-holding-heart"></i>
                         </div>
-                        <div class="filter">
-                            <div class="circle">
-                                <i class="fas fa-hand-holding-heart"></i>
-                            </div>
-                            <p>Romantique</p>
+                        <p>Romantique</p>
+                    </div>
+                    <div class="filter">
+                        <div class="circle">
+                            <i class="fas fa-paw"></i>
                         </div>
-                        <div class="filter">
-                            <div class="circle">
-                                <i class="fas fa-paw"></i>
-                            </div>
-                            <p>Animaux autorisés</p>
-                        </div>
+                        <p>Animaux autorisés</p>
                     </div>
                 </div>
-    
-                <div id="information">
-                    <div><i class="fas fa-info info"></i></div>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
+            </div>
+
+            <div id="information">
+                <div><i class="fas fa-info info"></i></div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
             <div id="hl">
