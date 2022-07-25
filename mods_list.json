@@ -5,5 +5,13 @@
       "projectID": 238222,
       "fileID": 3681294
     }
+  ],
+  "mods": [
+    {
+      "name": "journeymap",
+      "downloadURL": "https://mediafiles.forgecdn.net/files/3841/537/journeymap-1.16.5-5.8.5p5.jar",
+      "sha1": "fe23efe561f8580c4ba74f93ce7eb519",
+      "size": 6693670
+    }
   ]
 }
