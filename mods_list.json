@@ -1,13 +1,188 @@
 {
   "curseFiles": [
     {
-      //jei
-      "projectID": 238222,
-      "fileID": 3681294
+      "projectID": 247560,
+      "fileID": 3485079
     },
     {
-      "projectID": 32274,
-      "fileID": 3841569
+      "projectID": 225643,
+      "fileID": 3608755
+    },
+    {
+      "projectID": 228525,
+      "fileID": 3732239
+    },
+    {
+      "projectID": 79616,
+      "fileID": 3847670
+    },
+    {
+      "projectID": 272515,
+      "fileID": 3404330
+    },
+    {
+      "projectID": 237307,
+      "fileID": 3738137
+    },
+    {
+      "projectID": 59621,
+      "fileID": 3760512
+    },
+    {
+      "projectID": 309927,
+      "fileID": 3456953
+    },
+    {
+      "projectID": 404183,
+      "fileID": 3827554
+    },
+    {
+      "projectID": 309516,
+      "fileID": 3239647
+    },
+    {
+      "projectID": 389665,
+      "fileID": 3344719
+    },
+    {
+      "projectID": 363363,
+      "fileID": 3648093
+    },
+    {
+      "projectID": 267602,
+      "fileID": 3137659
+    },
+    {
+      "projectID": 486392,
+      "fileID": 3535459
+    },
+    {
+      "projectID": 407206,
+      "fileID": 3570671
+    },
+    {
+      "projectID": 258426,
+      "fileID": 3601708
+    },
+    {
+      "projectID": 235279,
+      "fileID": 3376782
+    },
+    {
+      "projectID": 241721,
+      "fileID": 3813365
+    },
+    {
+      "projectID": 242818,
+      "fileID": 3681973
+    },
+    {
+      "projectID": 282001,
+      "fileID": 3845704
+    },
+    {
+      "projectID": 399558,
+      "fileID": 3562328
+    },
+    {
+      "projectID": 233113,
+      "fileID": 3488119
+    },
+    {
+      "projectID": 70496,
+      "fileID": 3361259
+    },
+    {
+      "projectID": 245174,
+      "fileID": 3737982
+    },
+    {
+      "projectID": 239286,
+      "fileID": 3853310
+    },
+    {
+      "projectID": 465066,
+      "fileID": 3277762
+    },
+    {
+      "projectID": 55438,
+      "fileID": 3346467
+    },
+    {
+      "projectID": 250398,
+      "fileID": 3531453
+    },
+    {
+      "projectID": 416306,
+      "fileID": 3166929
+    },
+    {
+      "projectID": 401648,
+      "fileID": 3293637
+    },
+    {
+      "projectID": 328085,
+      "fileID": 3536025
+    },
+    {
+      "projectID": 224791,
+      "fileID": 3870899
+    },
+    {
+      "projectID": 271235,
+      "fileID": 3292844
+    },
+    {
+      "projectID": 272335,
+      "fileID": 3507886
+    },
+    {
+      "projectID": 223565,
+      "fileID": 3853692
+    },
+    {
+      "projectID": 250419,
+      "fileID": 3838362
+    },
+    {
+      "projectID": 250832,
+      "fileID": 3238352
+    },
+    {
+      "projectID": 274259,
+      "fileID": 3579466
+    },
+    {
+      "projectID": 331936,
+      "fileID": 3441028
+    },
+    {
+      "projectID": 231382,
+      "fileID": 3831424
+    },
+    {
+      "projectID": 348521,
+      "fileID": 3782784
+    },
+    {
+      "projectID": 312353,
+      "fileID": 3665636
+    },
+    {
+      "projectID": 230976,
+      "fileID": 3590413
+    },
+    {
+      "projectID": 239197,
+      "fileID": 3833806
+    },
+    {
+      "projectID": 401955,
+      "fileID": 3879813
+    },
+    {
+      "projectID": 307152,
+      "fileID": 3742182
     }
   ],
   "mods": []
